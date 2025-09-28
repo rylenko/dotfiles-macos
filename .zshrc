@@ -23,9 +23,13 @@ unsetopt PROMPT_SP
 ZSH_THEME="jbergantine"
 PROMPT='%~$(git_prompt_info)'
 
+# Configure zsh tmux plugin
+ZSH_TMUX_AUTOSTART=true
+
 # Set plugins
 plugins=(
 	git
+	tmux
 	zsh-syntax-highlighting
 	zsh-autosuggestions
 	zsh-completions
@@ -43,4 +47,5 @@ alias \
 	rm="rm -iv" \
 	mkdir="mkdir -p" \
 	v="nvim" \
-	o="oathtool --base32 --totp"
+	o="oathtool --base32 --totp" \
+	tk="tmux kill-server"

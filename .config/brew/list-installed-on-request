@@ -8,5 +8,6 @@ oath-toolkit
 pass
 protoc-gen-go
 ripgrep
+tmux
 tree-sitter
 tree-sitter-cli
